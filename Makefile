@@ -16,6 +16,7 @@ lint:
 		--concurrency 16 \
 		--skip-dirs-use-default \
 		--verbose \
-		--timeout 10m \
-		--out-format github-actions \
-		--presets format
+		--timeout 10m
+
+		# \
+		# --out-format github-actions
