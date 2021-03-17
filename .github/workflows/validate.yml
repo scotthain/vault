@@ -1,0 +1,14 @@
+name: Validate
+
+on:
+  push:
+
+jobs:
+  go-lint:
+      runs-on: ubuntu-latest
+      # container: docker.mirror.hashicorp.services/golangci/golangci-lint:latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+        - name: Go Lint
+          run: make lint
